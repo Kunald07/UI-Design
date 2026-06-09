@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI | Design, Develop, Deploy</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBQ35H2QPW"></script>
+		<script>
+			window.dataLayer = window.dataLayer || []
+			function gtag() {
+				dataLayer.push(arguments)
+			}
+			gtag('js', new Date())
+
+			gtag('config', 'G-HBQ35H2QPW')
+		</script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <div class="header-inner">
+        <div class="left">
+          <div class="logo">
+            <a href="/">
+              <span class="brand">Rachna</span>
+              <span class="byline">by Kunal</span></a
+            >
+          </div>
+        </div>
+
+        <div class="middle">
+          <nav>
+            <a href="/">Home</a>
+            <a
+              href="https://nikuma.notion.site/Rachna-2f1621b27a448098a3bcf5c730794fc7"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Blog</a
+            >
+            <a href="/#workflow">Features</a>
+            <a
+              href="https://github.com/bodhniraj/rachna"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+            <a href="/#faq">FAQ</a>
+          </nav>
+        </div>
+
+        <div class="right">
+          <button id="nav-cta">Getting Started</button>
+
+          <div class="more">
+            <div class="menu">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                id="rotatesvg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                ></path>
+              </svg>
+            </div>
+
+            <!-- offset menu -->
+            <div class="nav-card" id="navCard">
+              <a href="/">Home</a>
+              <a
+                href="https://nikuma.notion.site/Rachna-2f1621b27a448098a3bcf5c730794fc7"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Blog</a
+              >
+              <a href="/#workflow">Features</a>
+              <a
+                href="https://github.com/bodhniraj/rachna"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+              <a href="/#faq">FAQ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="container" class="hero">
+      <div class="spotlight-bg"></div>
+      <!-- label -->
+      <div class="label">
+        <div class="status-dot">
+          <div class="ping"></div>
+          <div class="dot"></div>
+        </div>
+        <span class="label-text">10K+ Monthly Users</span>
+      </div>
+
+      <!-- heading -->
+      <h1 class="fade-up">
+        Visual design that
+        <span class="icons delay-4">
+          <span>
+            <svg
+              width="500"
+              height="500"
+              viewBox="0 0 500 500"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_3_60)">
+                <path
+                  d="M275.732 239.846C275.773 244.747 274.784 249.602 272.83 254.096L278.207 261.374C281.346 262.182 284.388 263.327 287.281 264.788C348.287 295.795 365.124 304.4 365.124 304.4C365.124 304.4 349.46 281.021 295.628 208.282C291.172 202.251 284.287 199.059 277.297 199.056L269.779 220.699C273.597 226.36 275.667 233.018 275.732 239.846Z"
+                  fill="white"
+                />
+                <path
+                  d="M118.504 146.726C104.25 150.231 95.536 164.629 99.041 178.883L131.827 312.197L131.86 312.152C134.596 321.684 143.358 328.645 153.736 328.645L153.946 328.644L261.565 327.658L333.105 364.024C344.356 369.741 358.051 365.223 363.736 354.039C369.437 342.822 364.967 329.109 353.751 323.408L277.247 284.52C274.046 282.893 270.506 282.046 266.916 282.046L266.716 282.047L153.529 283.083L185.137 275.801L169.454 275.95C153.313 276.026 141.369 265.179 138.26 257.056L112.103 188.696L154.311 250.914C157.76 255.997 163.508 258.82 169.297 258.765L240.816 258.081C250.671 257.988 258.642 249.925 258.546 240.009C258.503 234.259 255.563 228.628 250.603 225.301L275.216 154.442C277.223 148.666 274.166 142.36 268.392 140.354L268.36 140.345C262.613 138.365 256.306 141.418 254.304 147.178L228.177 222.397L178.552 222.871L140.329 166.528L184.945 205.624L209.111 205.393L196.685 154.869C193.18 140.615 178.782 131.901 164.528 135.406L118.504 146.726ZM168.853 91.369C168.853 96.536 167.836 101.652 165.858 106.426C163.881 111.2 160.983 115.537 157.329 119.191C153.676 122.844 149.339 125.743 144.565 127.72C139.791 129.697 134.675 130.715 129.508 130.715C124.341 130.715 119.225 129.697 114.451 127.72C109.677 125.743 105.34 122.844 101.687 119.191C98.033 115.537 95.1349 111.2 93.1577 106.426C91.1804 101.652 90.1629 96.536 90.163 91.369C90.163 80.9341 94.3083 70.9265 101.687 63.5479C109.065 56.1693 119.073 52.024 129.508 52.024C139.943 52.024 149.95 56.1693 157.329 63.5479C164.708 70.9265 168.853 80.9341 168.853 91.369Z"
+                  fill="white"
+                />
+                <path
+                  d="M486.164 350.878H387.769C387.032 355.473 385.582 359.924 383.471 364.071C372.229 386.186 345.182 394.992 323.075 383.757L258.393 350.877H117.314L74.513 176.849C73.6949 173.522 72.2261 170.391 70.1915 167.634C68.1569 164.878 65.5967 162.552 62.6586 160.79C59.7205 159.029 56.4626 157.866 53.0729 157.37C49.6832 156.874 46.2288 157.053 42.909 157.899L27.942 161.711C14.144 165.224 5.75399 179.199 9.13899 193.028L22.61 248.073C20.1383 246.038 17.0354 244.928 13.834 244.932C6.19299 244.932 -0.00201416 251.127 -0.00201416 258.768V417.072C-0.00201416 424.713 6.19299 430.908 13.834 430.908H37.948V439.016C37.948 441.395 38.893 443.677 40.5752 445.359C42.2574 447.041 44.539 447.986 46.918 447.986H91.914C94.293 447.986 96.5745 447.041 98.2567 445.359C99.9389 443.677 100.884 441.395 100.884 439.016V430.908H402.036V439.016C402.036 441.395 402.981 443.677 404.663 445.359C406.345 447.041 408.627 447.986 411.006 447.986H456.002C458.381 447.986 460.663 447.041 462.345 445.359C464.027 443.677 464.972 441.395 464.972 439.016V430.908H486.164C493.805 430.908 500 424.713 500 417.072V364.715C500.001 357.073 493.806 350.879 486.165 350.879M27.672 350.879V268.746L47.774 350.879H27.672Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_3_60">
+                  <rect width="500" height="500" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </span>
+          <span>
+            <svg
+              width="500"
+              height="500"
+              viewBox="0 0 500 500"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_2_20)">
+                <path
+                  d="M495.913 270.637H237.451C236.367 270.637 235.327 271.068 234.561 271.834C233.795 272.601 233.364 273.64 233.364 274.724V312.15C233.364 313.234 233.795 314.273 234.561 315.04C235.327 315.806 236.367 316.237 237.451 316.237H277.484V461.457C277.484 467.661 282.514 472.691 288.718 472.691C294.922 472.691 299.952 467.662 299.952 461.457V316.236H433.413V461.457C433.413 467.661 438.443 472.691 444.647 472.691C450.851 472.691 455.881 467.662 455.881 461.457V316.236H495.915C496.999 316.236 498.038 315.805 498.805 315.039C499.571 314.272 500.002 313.233 500.002 312.149V274.723C500.002 273.639 499.571 272.6 498.805 271.834C498.038 271.067 496.999 270.637 495.915 270.637M221.463 72.252C221.463 78.1525 220.301 83.9954 218.043 89.4468C215.785 94.8983 212.476 99.8516 208.304 104.024C204.131 108.196 199.178 111.506 193.727 113.764C188.275 116.022 182.433 117.184 176.532 117.184C170.631 117.184 164.788 116.022 159.337 113.764C153.885 111.506 148.932 108.197 144.76 104.024C140.587 99.8519 137.278 94.8986 135.02 89.447C132.762 83.9955 131.6 78.1526 131.6 72.252C131.656 60.3721 136.415 48.998 144.835 40.6174C153.255 32.2368 164.651 27.532 176.531 27.532C188.411 27.532 199.808 32.2368 208.228 40.6174C216.648 48.998 221.407 60.3721 221.463 72.252Z"
+                  fill="white"
+                />
+                <path
+                  d="M209.102 308.121C207.841 304.584 205.782 301.385 203.084 298.773C200.387 296.161 197.124 294.205 193.548 293.058L168.027 284.878L172.642 268.769C163.49 267.227 155.749 261.056 152.14 252.605L120.32 177.775L168.817 239.503C170.89 242.143 173.584 244.229 176.659 245.575C179.733 246.921 183.093 247.486 186.439 247.219L228.39 243.881C228.092 244.898 227.94 245.953 227.939 247.013C227.939 253.217 232.969 258.247 239.173 258.247H351.743C357.947 258.247 362.977 253.218 362.977 247.013C362.977 240.808 357.947 235.779 351.743 235.779H279.29C283.962 231.684 286.724 225.529 286.193 218.861C285.301 207.654 275.514 199.282 264.285 200.183L260.708 200.468L247.346 170.165C244.842 164.487 238.207 161.915 232.535 164.418C226.858 166.921 224.285 173.553 226.787 179.229L236.984 202.355L194.089 205.768L152.336 152.623L196.574 185.516L197.965 180.379C202.582 164.264 193.261 147.457 177.147 142.841L127.497 128.616C123.472 127.463 119.253 127.155 115.104 127.711C110.954 128.268 106.965 129.677 103.386 131.849C99.8076 134.022 96.7171 136.911 94.3089 140.335C91.9008 143.76 90.2271 147.645 89.393 151.748L59.458 298.998C58.6308 303.06 58.7912 307.262 59.9258 311.249C61.0604 315.237 63.136 318.894 65.978 321.912H54.33L32.443 149.082C31.313 140.159 23.163 133.84 14.241 134.972C5.317 136.102 -0.999005 144.251 0.130995 153.174L23.822 340.244C24.3189 344.178 26.2345 347.796 29.2094 350.417C32.1842 353.039 36.0137 354.485 39.979 354.484H98.79V421.174L60.103 452.754C55.296 456.678 54.581 463.754 58.504 468.561C62.427 473.368 69.503 474.083 74.312 470.16L98.789 450.178V461.457C98.789 467.661 103.819 472.691 110.023 472.691C116.227 472.691 121.257 467.662 121.257 461.457V450.178L145.733 470.16C147.736 471.799 150.244 472.693 152.831 472.692C156.089 472.692 159.319 471.282 161.54 468.562C165.464 463.755 164.749 456.679 159.942 452.755L121.257 421.175V354.485H173.759L210.097 456.458C213.66 466.457 223.069 472.693 233.108 472.693C235.903 472.689 238.676 472.207 241.308 471.268C254.017 466.74 260.647 452.766 256.118 440.057L209.102 308.121Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_2_20">
+                  <rect width="500" height="500" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </span>
+          <span>
+            <svg
+              width="500"
+              height="500"
+              viewBox="0 0 500 500"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_2_11)">
+                <path
+                  d="M196.737 50.04C196.737 62.9659 191.602 75.3623 182.462 84.5023C173.322 93.6422 160.926 98.777 148 98.777C135.074 98.777 122.678 93.6422 113.538 84.5023C104.398 75.3623 99.2629 62.9659 99.2629 50.04C99.2629 37.1141 104.398 24.7177 113.538 15.5777C122.678 6.43778 135.074 1.303 148 1.303C160.926 1.303 173.322 6.43778 182.462 15.5777C191.602 24.7177 196.737 37.1141 196.737 50.04ZM261.664 332.114C260.992 326.858 258.76 321.923 255.255 317.949C251.751 313.974 247.135 311.141 242.004 309.816L185.39 295.2L186.654 277.385C176.996 275.544 168.861 268.955 165.027 259.977L130.514 178.811L183.116 245.764C185.366 248.626 188.288 250.888 191.623 252.349C194.958 253.809 198.602 254.423 202.231 254.135L247.734 250.514C247.412 251.618 247.247 252.761 247.245 253.911C247.245 260.64 252.7 266.096 259.43 266.096H369.348C372.028 266.096 374.634 265.212 376.761 263.581C378.889 261.95 380.419 259.664 381.115 257.075L412.053 142.048C413.801 135.549 409.95 128.864 403.451 127.116C396.952 125.37 390.267 129.218 388.519 135.718L360.007 241.725H302.945C308.012 237.284 311.007 230.608 310.432 223.375C309.465 211.218 298.842 202.138 286.669 203.114L210.53 209.172L165.241 151.527L194.061 173.029L194.987 159.987C196.274 141.85 182.615 126.102 164.477 124.815L108.595 120.849C89.4619 119.491 73.1959 134.739 73.3419 153.94L74.5809 316.924C74.6328 323.628 77.0798 330.092 81.4799 335.15H58.9329L35.192 147.683C33.967 138.005 25.131 131.147 15.4489 132.378C5.77095 133.604 -1.08305 142.443 0.14395 152.121L25.841 355.034C26.959 363.861 34.468 370.48 43.366 370.48H107.158V442.82L65.1959 477.074C59.9829 481.329 59.206 489.006 63.462 494.219C67.7169 499.433 75.395 500.208 80.6069 495.953L107.157 474.279V486.514C107.157 493.243 112.612 498.699 119.342 498.699C126.072 498.699 131.527 493.244 131.527 486.514V474.279L158.077 495.953C160.249 497.731 162.969 498.702 165.776 498.7C167.585 498.702 169.371 498.301 171.005 497.526C172.639 496.751 174.08 495.622 175.223 494.22C179.478 489.007 178.702 481.331 173.489 477.075L131.527 442.821V370.481H189.697C198.522 370.481 205.815 364.002 207.13 355.545L211.375 356.641L226.57 475.558C228.425 490.085 241.708 500.338 256.211 498.483C270.727 496.629 280.99 483.357 279.136 468.842L261.664 332.114Z"
+                  fill="white"
+                />
+                <path
+                  d="M482.335 281.916H281.685C271.93 281.916 264.02 289.825 264.02 299.581C264.02 309.337 271.929 317.246 281.685 317.246H464.67V463.37H381.534C371.779 463.37 363.869 471.279 363.869 481.035C363.869 490.791 371.778 498.7 381.534 498.7H482.335C492.09 498.7 500 490.791 500 481.035V299.58C500 289.825 492.091 281.916 482.335 281.916Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_2_11">
+                  <rect width="500" height="500" fill="white" />
+                </clipPath>
+              </defs>
+            </svg> </span
+        ></span>
+        turns ideas into real world interfaces
+      </h1>
+
+      <!-- sub-heading -->
+      <p class="fade-up">
+        Stand out in a fast-paced design world. Create clean, modern, and
+        minimal interfaces that stay consistent, scale easily, and ship faster.
+      </p>
+
+      <!-- cta -->
+      <button id="cta" class="fade-in">Start a New Design</button>
+
+      <!-- social-proofs -->
+      <div class="social">
+        <div class="proof float">
+          <img src="./assets/images/first.png" alt="" />
+          <img src="./assets/images/second.png" alt="" />
+          <img src="./assets/images/third.png" alt="" />
+          <img src="./assets/images/fourth.png" alt="" />
+          <img src="./assets/images/fifth.png" alt="" />
+        </div>
+        <span class="stars"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            class="size-6"
+          >
+            <defs>
+              <!-- Gold body -->
+              <linearGradient id="goldFill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#fff6d8"></stop>
+                <stop offset="100%" stop-color="#f0c97a"></stop>
+              </linearGradient>
+
+              <!-- Subtle top highlight -->
+              <linearGradient id="goldHighlight" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="white" stop-opacity="0.55"></stop>
+                <stop offset="60%" stop-color="white" stop-opacity="0"></stop>
+              </linearGradient>
+            </defs>
+
+            <!-- main star -->
+            <path
+              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+              fill="url(#goldFill)"
+            ></path>
+
+            <!-- internal highlight overlay -->
+            <path
+              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+              fill="url(#goldHighlight)"
+              opacity="0.35"
+            ></path>
+
+            <!-- crisp edge -->
+            <path
+              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+              fill="none"
+              stroke="white"
+              stroke-opacity="0.25"
+              stroke-width="0.4"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            class="size-6"
+          >
+            <defs>
+              <!-- Gold body -->
+              <linearGradient id="goldFill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#fff6d8"></stop>
+                <stop offset="100%" stop-color="#f0c97a"></stop>
+              </linearGradient>
+
+              <!-- Subtle top highlight -->
+              <linearGradient id="goldHighlight" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="white" stop-opacity="0.55"></stop>
+                <stop offset="60%" stop-color="white" stop-opacity="0"></stop>
+              </linearGradient>
+            </defs>
+
+            <!-- main star -->
+            <path
+              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+              fill="url(#goldFill)"
+            ></path>
+
+            <!-- internal highlight overlay -->
+            <path
+              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+              fill="url(#goldHighlight)"
+              opacity="0.35"
+            ></path>
+
+            <!-- crisp edge -->
+            <path
+              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+              fill="none"
+              stroke="white"
+              stroke-opacity="0.25"
+              stroke-width="0.4"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            class="size-6"
+          >
+            <defs>
+              <!-- Gold body -->
+              <linearGradient id="goldFill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#fff6d8"></stop>
+                <stop offset="100%" stop-color="#f0c97a"></stop>
+              </linearGradient>
+
+              <!-- Subtle top highlight -->
+              <linearGradient id="goldHighlight" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="white" stop-opacity="0.55"></stop>
+                <stop offset="60%" stop-color="white" stop-opacity="0"></stop>
+              </linearGradient>
+            </defs>
+
+            <!-- main star -->
+            <path
+              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+              fill="url(#goldFill)"
+            ></path>
+
+            <!-- internal highlight overlay -->
+            <path
+              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+              fill="url(#goldHighlight)"
+              opacity="0.35"
+            ></path>
+
+            <!-- crisp edge -->
+            <path
+              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+              fill="none"
+              stroke="white"
+              stroke-opacity="0.25"
+              stroke-width="0.4"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            class="size-6"
+          >
+            <defs>
+              <!-- Gold body -->
+              <linearGradient id="goldFill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#fff6d8"></stop>
+                <stop offset="100%" stop-color="#f0c97a"></stop>
+              </linearGradient>
+
+              <!-- Subtle top highlight -->
+              <linearGradient id="goldHighlight" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="white" stop-opacity="0.55"></stop>
+                <stop offset="60%" stop-color="white" stop-opacity="0"></stop>
+              </linearGradient>
+            </defs>
+
+            <!-- main star -->
+            <path
+              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+              fill="url(#goldFill)"
+            ></path>
+
+            <!-- internal highlight overlay -->
+            <path
+              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+              fill="url(#goldHighlight)"
+              opacity="0.35"
+            ></path>
+
+            <!-- crisp edge -->
+            <path
+              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+              fill="none"
+              stroke="white"
+              stroke-opacity="0.25"
+              stroke-width="0.4"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            class="size-6"
+          >
+            <defs>
+              <!-- Gold body -->
+              <linearGradient id="goldFill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#fff6d8"></stop>
+                <stop offset="100%" stop-color="#f0c97a"></stop>
+              </linearGradient>
+
+              <!-- Subtle top highlight -->
+              <linearGradient id="goldHighlight" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="white" stop-opacity="0.55"></stop>
+                <stop offset="60%" stop-color="white" stop-opacity="0"></stop>
+              </linearGradient>
+            </defs>
+
+            <!-- main star -->
+            <path
+              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+              fill="url(#goldFill)"
+            ></path>
+
+            <!-- internal highlight overlay -->
+            <path
+              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+              fill="url(#goldHighlight)"
+              opacity="0.35"
+            ></path>
+
+            <!-- crisp edge -->
+            <path
+              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+              fill="none"
+              stroke="white"
+              stroke-opacity="0.25"
+              stroke-width="0.4"
+            ></path>
+          </svg>
+        </span>
+        <p class="fade-up">Trusted by 10K+ designers</p>
+      </div>
+    </section>
+
+    <!-- Features -->
+
+    <section class="workflow" id="workflow">
+      <!-- sub-heading -->
+      <h2 class="fade-up">
+        <span>Features</span>
+      </h2>
+
+      <!-- bento grid -->
+      <div class="bentogrid">
+        <div class="bento">
+          <div class="box1">
+            <div class="top">
+              <!-- <span>01</span> -->
+            </div>
+            <div class="bottom">
+              <h3>Command Palette</h3>
+              <p>
+                Press <strong>Ctrl + K</strong> to open a command palette like
+                Raycast. Instantly generate elements, run commands, and speed up
+                your design workflow.
+              </p>
+            </div>
+          </div>
+          <div class="box2">
+            <div class="top">
+              <!-- <span>02</span> -->
+            </div>
+            <div class="bottom">
+              <h3>Infinite Canvas & Hand Tool</h3>
+              <p>
+                Pan, zoom, and design freely on an infinite canvas — just like
+                Figma. Move around with the hand tool and never feel restricted.
+              </p>
+            </div>
+          </div>
+          <div class="box3">
+            <div class="top">
+              <!-- <span>03</span> -->
+            </div>
+            <div class="bottom">
+              <h3>Local Storage</h3>
+              <p>
+                Your designs auto-save locally and update in real-time. Switch
+                devices or tabs and never lose your work.
+              </p>
+            </div>
+          </div>
+          <div class="box4">
+            <div class="top">
+              <!-- <span>04</span> -->
+            </div>
+            <div class="bottom">
+              <h3>Keyboard Shortcuts</h3>
+              <p>
+                Navigate and edit faster with familiar Figma-like shortcuts.
+                Everything you need is just a keystroke away.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <!-- sub-heading -->
+      <h2 class="fade-up">
+        <span>FAQ</span>
+      </h2>
+
+      <!-- bento grid -->
+      <div class="bentogrid">
+        <div class="bento">
+          <div class="box1">
+            <h3>Got Questions? <br />We Got Answers</h3>
+            <p>
+              Clear, practical tips and guidance to help you design, build, and
+              ship your interfaces with confidence.
+            </p>
+          </div>
+          <div class="box2">
+            <div class="faq-container">
+              <!-- FAQ Items -->
+              <div class="faq-list">
+                <details class="faq-item">
+                  <summary>
+                    <h3>What is Rachna?</h3>
+
+                    <svg
+                      class="arrow"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </summary>
+
+                  <div class="faq-content">
+                    <p>
+                      Rachna is a modern visual design tool built to turn your
+                      ideas into interfaces — clean, scalable, and ready for
+                      real-world projects.
+                    </p>
+                  </div>
+                </details>
+
+                <details class="faq-item">
+                  <summary>
+                    <h3>What makes Rachna different from Figma?</h3>
+
+                    <svg
+                      class="arrow"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </summary>
+
+                  <div class="faq-content">
+                    <p>
+                      Rachna is built for speed and simplicity. Our main focus
+                      is on modern and clean design, lightning-fast performance,
+                      and minimal clutter workflow so you can focus on design,
+                      not distractions.
+                    </p>
+                  </div>
+                </details>
+
+                <details class="faq-item">
+                  <summary>
+                    <h3>Do I need coding skills to use it?</h3>
+
+                    <svg
+                      class="arrow"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </summary>
+
+                  <div class="faq-content">
+                    <p>
+                      Nope! Whether you’re a designer or a beginner, Rachna’s
+                      intuitive drag-and-drop interface lets you create
+                      professional interfaces without touching a single line of
+                      code.
+                    </p>
+                  </div>
+                </details>
+
+                <details class="faq-item">
+                  <summary>
+                    <h3>Can I export my designs to code?</h3>
+                    <svg
+                      class="arrow"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </summary>
+
+                  <div class="faq-content">
+                    <p>
+                      Yes! Rachna lets you export clean, production-ready HTML &
+                      CSS code for your projects which is perfect for developers
+                      or handoff to teams.
+                    </p>
+                  </div>
+                </details>
+
+                <details class="faq-item">
+                  <summary>
+                    <h3>Is there a free version to try?</h3>
+
+                    <svg
+                      class="arrow"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </summary>
+
+                  <div class="faq-content">
+                    <p>
+                      Definitely! Get started with our free plan, explore all
+                      the core features, and upgrade anytime if you need
+                      advanced functionality.
+                    </p>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <!-- bento grid -->
+      <div class="bentogrid">
+        <div class="bento">
+          <div class="box1">
+            <a href="/" class="rizz">
+              <span class="brand">Rachna</span>
+              <span class="byline">by Kunal</span></a
+            >
+            <p>
+              A modern design playground for turning imagination into modern
+              interfaces.
+            </p>
+            <p>Designed & built by <b>Kunal Deshmukh</b></p>
+          </div>
+          <div class="box2">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li>
+                <a
+                  href="https://nikuma.notion.site/Rachna-2f1621b27a448098a3bcf5c730794fc7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a href="/#workflow">Features</a>
+              </li>
+              <li><a href="/">Careers</a></li>
+              <li><a href="/">Changelog</a></li>
+            </ul>
+          </div>
+          <div class="box3">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="/">About</a></li>
+              <li><a href="/">Contact</a></li>
+              <li><a href="/">Privacy Policy</a></li>
+              <li><a href="/">Terms of Service</a></li>
+              <li><a href="/">Refund Policy</a></li>
+            </ul>
+          </div>
+          <div class="box4">
+            <h3>Socials</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/Kunald07"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/kunaldeshmukh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >YouTube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="bigtext">Rachna</p>
+    </section>
+
+    <script src="./scripts/components/nav.js"></script>
+    <script src="./scripts/components/spotlight.js"></script>
+    <script src="./scripts/components/cta.js"></script>
+  </body>
+</html>

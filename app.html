@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App - Rachna</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="./styles/app.css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HBQ35H2QPW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-HBQ35H2QPW");
+    </script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- Left Sidebar -->
+      <aside class="sidebar sidebar-left">
+        <div class="sidebar-header">
+          <div
+            class="logo-wrapper"
+            style="display: flex; align-items: center; gap: 10px"
+          >
+            <button
+              onclick="window.location.href = 'dashboard.html'"
+              class="dash"
+            >
+              <!-- Simple Home Icon -->
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+              </svg>
+            </button>
+            <div class="logo">Rachna</div>
+          </div>
+          <div class="filename" contenteditable="true" spellcheck="false">
+            Untitled
+          </div>
+        </div>
+
+        <!-- NEW SECTION: Static Guide Hint -->
+        <div class="sidebar-guide-hint">
+          <span>Shortcut Guide</span>
+          <kbd>Shift + /</kbd>
+        </div>
+
+        <!-- File Header -->
+        <div class="file-controls">
+          <div class="file-title">Layers</div>
+        </div>
+
+        <!-- Layers -->
+        <div class="layers"></div>
+        <!-- <div class="layer-item">Rectangle 1</div> -->
+      </aside>
+
+      <!-- Middle Canvas -->
+      <main class="editor">
+        <div id="canvas-wrapper">
+          <div id="canvas"></div>
+        </div>
+
+        <!-- bottom dock -->
+        <div class="dock">
+          <button class="tool-btn" data-tool="move">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              width="24"
+              height="24"
+            >
+              <path
+                d="M12 1.5a.75.75 0 0 1 .75.75V4.5a.75.75 0 0 1-1.5 0V2.25A.75.75 0 0 1 12 1.5ZM5.636 4.136a.75.75 0 0 1 1.06 0l1.592 1.591a.75.75 0 0 1-1.061 1.06l-1.591-1.59a.75.75 0 0 1 0-1.061Zm12.728 0a.75.75 0 0 1 0 1.06l-1.591 1.592a.75.75 0 0 1-1.06-1.061l1.59-1.591a.75.75 0 0 1 1.061 0Zm-6.816 4.496a.75.75 0 0 1 .82.311l5.228 7.917a.75.75 0 0 1-.777 1.148l-2.097-.43 1.045 3.9a.75.75 0 0 1-1.45.388l-1.044-3.899-1.601 1.42a.75.75 0 0 1-1.247-.606l.569-9.47a.75.75 0 0 1 .554-.68ZM3 10.5a.75.75 0 0 1 .75-.75H6a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 10.5Zm14.25 0a.75.75 0 0 1 .75-.75h2.25a.75.75 0 0 1 0 1.5H18a.75.75 0 0 1-.75-.75Zm-8.962 3.712a.75.75 0 0 1 0 1.061l-1.591 1.591a.75.75 0 1 1-1.061-1.06l1.591-1.592a.75.75 0 0 1 1.06 0Z"
+              />
+            </svg>
+            <kbd>V</kbd>
+          </button>
+
+          <button class="tool-btn" data-tool="hand">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              width="18"
+              height="18"
+            >
+              <path
+                d="M10.5 1.875a1.125 1.125 0 0 1 2.25 0v8.219c.517.162 1.02.382 1.5.659V3.375a1.125 1.125 0 0 1 2.25 0v10.937a4.505 4.505 0 0 0-3.25 2.373 8.963 8.963 0 0 1 4-.935A.75.75 0 0 0 18 15v-2.266a3.368 3.368 0 0 1 .988-2.37 1.125 1.125 0 0 1 1.591 1.59 1.118 1.118 0 0 0-.329.79v3.006h-.005a6 6 0 0 1-1.752 4.007l-1.736 1.736a6 6 0 0 1-4.242 1.757H10.5a7.5 7.5 0 0 1-7.5-7.5V6.375a1.125 1.125 0 0 1 2.25 0v5.519c.46-.452.965-.832 1.5-1.141V3.375a1.125 1.125 0 0 1 2.25 0v6.526c.495-.1.997-.151 1.5-.151V1.875Z"
+              />
+            </svg>
+            <kbd>H</kbd>
+          </button>
+
+          <button class="tool-btn" data-tool="frame">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2.5"
+              width="18"
+              height="18"
+            >
+              <path
+                d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5-3.9 19.5m-2.1-19.5-3.9 19.5"
+              />
+            </svg>
+            <kbd>F</kbd>
+          </button>
+
+          <div class="tool-group">
+            <button class="tool-btn dropdown-trigger" data-tool="shape">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="18"
+                height="18"
+              >
+                <rect x="4" y="4" width="16" height="16" rx="2" />
+              </svg>
+              <kbd>R</kbd>
+            </button>
+            <div class="tool-dropdown" id="shape-dropdown">
+              <button data-shape="rectangle">Rectangle <kbd>R</kbd></button>
+              <button data-shape="ellipse">Ellipse <kbd>O</kbd></button>
+              <button data-shape="line">Line <kbd>L</kbd></button>
+              <button data-shape="polygon">Polygon <kbd>P</kbd></button>
+              <button data-shape="star">Star <kbd>S</kbd></button>
+            </div>
+          </div>
+
+          <button class="tool-btn" data-tool="text">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              width="18"
+              height="18"
+            >
+              <path d="M13 6v15h-2V6H5V4h14v2h-6z" />
+            </svg>
+            Text
+          </button>
+
+          <button class="tool-btn" data-tool="image">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              width="18"
+              height="18"
+            >
+              <path
+                d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"
+              />
+            </svg>
+            Image
+          </button>
+        </div>
+      </main>
+
+      <!-- Right Sidebar -->
+      <aside class="sidebar sidebar-right">
+        <div class="right-header">
+          <div class="profile">
+            <img src="https://nirajkumar.space/logo.png" alt="Profile" />
+          </div>
+
+          <div class="command-palette-pill" id="sidebar-command-trigger">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <span>Search actions...</span>
+            <kbd>⌘ + K</kbd>
+          </div>
+        </div>
+
+        <!-- mode switch -->
+        <div class="modes">
+          <button class="mode-btn active">Design</button>
+          <button class="mode-btn" id="prototype">ProtoType</button>
+        </div>
+
+        <!-- Properties Panel -->
+        <div class="properties">
+          <h3>Properties</h3>
+        </div>
+
+        <div class="export">
+          <h3>Export</h3>
+          <button>Export PNG</button>
+          <button>Export HTML</button>
+          <button id="exportJSON">Export JSON</button>
+        </div>
+      </aside>
+    </div>
+
+    <!-- keyboard shortcut guide -->
+    <div id="guide-overlay" class="guide-overlay" style="display: none">
+      <div class="guide-modal">
+        <div class="guide-header">
+          <h3>Keyboard Shortcuts</h3>
+          <span class="close-guide">✕</span>
+        </div>
+        <div class="guide-content" id="shortcuts-list"></div>
+      </div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/guide.js"></script>
+    <script src="./scripts/pan.js"></script>
+    <script src="./scripts/dropdown.js"></script>
+    <script src="./scripts/properties.js"></script>
+    <script src="./scripts/duplicate.js"></script>
+    <script src="./scripts/selectall.js"></script>
+    <script src="./scripts/zoom.js"></script>
+    <script src="./scripts/selection.js"></script>
+    <script src="./scripts/command.js"></script>
+    <script src="./scripts/contextmenu.js"></script>
+    <script src="./scripts/exportjson.js"></script>
+    <script src="./scripts/export.js"></script>
+    <script src="./scripts/localstorage.js"></script>
+  </body>
+</html>

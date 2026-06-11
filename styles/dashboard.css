@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap");
+@font-face {
+  font-family: Gilroy-Regular;
+  src: url("../assets/fonts/Gilroy-Regular.ttf");
+}
+@font-face {
+  font-family: Gilroy-Light;
+  src: url("../assets/fonts/Gilroy-Light.ttf");
+}
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url("../assets/fonts/Gilroy-Medium.ttf");
+}
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url("../assets/fonts/Gilroy-Bold.ttf");
+}
+@font-face {
+  font-family: Gilroy-Heavy;
+  src: url("../assets/fonts/Gilroy-Heavy.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  font-family: "Gilroy-Regular", "Outfit", "Poppins", Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  overflow-x: hidden;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar);
+  border-radius: 0.625rem;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-scrollbar);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-scrollbar) transparent;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#workflow,
+#faq {
+  scroll-margin-top: 80px;
+}
+
+:root {
+  --color-bg: #030303;
+  --color-bg-secondary: #0f0f0f;
+  --color-text: #fafafa;
+  --color-text-secondary: #bbbbbb;
+  --color-accent: #fa3a3b;
+  --color-accent-secondary: #fa3a3b30;
+  --color-border: #1f1f1f;
+  --color-card: #1f1f1f50;
+  --color-scrollbar: #ffffff26;
+  --color-scrollbar-active: #ffffff59;
+  --color-link-hover: #fafafa;
+  --color-hover-bg: #1a1a1a;
+  --color-scrollbar: #ffffff26;
+  --color-scrollbar-active: #ffffff59;
+}
+
+.dashboard-container {
+  padding: 50px;
+  color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  margin-bottom: 40px;
+}
+
+.file-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: #2c2c2c;
+  border-radius: 12px;
+  height: 280px;
+  cursor: pointer;
+  border: 1px solid #333;
+  transition: 0.2s;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  border-color: #0e8be8;
+  transform: translateY(-4px);
+}
+
+.thumbnail {
+  flex: 1;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.thumbnail svg {
+  opacity: 0.2;
+  width: 60px;
+  height: 60px;
+}
+
+.card-info {
+  padding: 15px;
+  border-top: 1px solid #333;
+  background: #2c2c2c;
+}
+
+.card-info h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.card-info p {
+  margin: 5px 0 0 0;
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.create-card {
+  border: 2px dashed #444;
+  background: transparent;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-card:hover {
+  border-color: #0e8be8;
+  background: rgba(44, 44, 44, 0.062745098);
+}
+
+.plus-icon {
+  font-size: 3rem;
+  color: #444;
+  transition: 0.2s;
+}
+
+.create-card:hover .plus-icon {
+  color: #0e8be8;
+  transform: scale(1.1);
+}
+
+.delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  opacity: 0;
+  transition: 0.2s;
+  z-index: 10;
+}
+
+.project-card:hover .delete-btn {
+  opacity: 1;
+}
+
+.delete-btn:hover {
+  background: #ff4d4d;
+}/*# sourceMappingURL=dashboard.css.map */

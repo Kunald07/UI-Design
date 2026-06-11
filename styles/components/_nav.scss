@@ -1,0 +1,207 @@
+// navbar
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  height: min-content;
+  padding: 1rem 1.25rem;
+  background-color: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  .header-inner {
+    width: 100%;
+    max-width: 77rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+      .logo {
+        a {
+          font-size: 1.5rem;
+          font-weight: 400;
+          color: var(--color-text);
+          font-family:
+            "Gilroy", "Outfit", "Gilroy", "Inter", Arial, Helvetica, sans-serif;
+          text-decoration: none;
+          display: inline-flex;
+          flex-direction: column;
+          align-items: flex-end;
+          line-height: 1;
+
+          .brand {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--color-text);
+          }
+
+          .byline {
+            font-size: 0.875rem;
+            font-weight: 400;
+            opacity: 0.7;
+            margin-top: 2px;
+            color: var(--color-text);
+          }
+        }
+      }
+    }
+
+    .middle {
+      display: none;
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        display: none;
+      }
+
+      .more {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .menu {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          svg {
+            height: 1.5rem;
+            width: 1.5rem;
+            cursor: pointer;
+            transition: 0.3s ease;
+            stroke: var(--color-text);
+            -webkit-tap-highlight-color: transparent;
+          }
+        }
+
+        .nav-card {
+          position: absolute;
+          top: 130%;
+          right: 0;
+          background: var(--color-bg-secondary);
+          border: 0.5px solid var(--color-border);
+          border-radius: 0.75rem;
+          padding: 0.5rem 0.5rem;
+          min-width: 10rem;
+          width: auto;
+          display: flex;
+          flex-direction: column;
+          opacity: 0;
+          pointer-events: none;
+          transform: translateY(10px);
+          transition:
+            opacity 0.1s ease,
+            transform 0.3s ease;
+          z-index: 999;
+          align-items: flex-start;
+          white-space: nowrap;
+
+          a {
+            width: 100%;
+            display: block;
+            padding: 0.5rem 0.5rem;
+            color: var(--color-text);
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition:
+              background 0.3s ease,
+              color 0.3s ease;
+          }
+
+          a:hover {
+            color: var(--color-link-hover);
+            background-color: var(--color-hover-bg);
+          }
+        }
+
+        .nav-card.show {
+          opacity: 1;
+          pointer-events: auto;
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    .header-inner {
+      margin: 0 auto;
+      align-items: space-between;
+
+      .middle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        nav {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.25rem;
+
+          a {
+            color: var(--color-text);
+            font-size: 1.125rem;
+            padding: 0.5rem 0.75rem;
+            transition:
+              background 0.3s ease,
+              color 0.3s ease;
+            border-radius: 0.5rem;
+            text-decoration: none;
+          }
+
+          a:hover {
+            background-color: var(--color-bg-secondary);
+            color: var(--color-link-hover);
+          }
+        }
+      }
+
+      .right {
+        button {
+          display: inline-block;
+          padding: 0.5rem 1rem;
+          font-size: 1.125rem;
+          width: 100%;
+          border-radius: 50px;
+          border: none;
+          cursor: pointer;
+          font-weight: bold;
+          transition: transform 0.2s ease-in;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -webkit-tap-highlight-color: transparent;
+          font-family: "Gilroy-Regular", "Outfit", Arial, Helvetica, sans-serif;
+          background-color: #fa3a3b;
+          color: white;
+          box-shadow:
+            rgba(255, 60, 60, 0.3) 0px 0px 72px 0px,
+            rgba(255, 255, 255, 0.6) 0px 1px 0px 0px inset,
+            rgba(255, 60, 60, 0.12) 0px 0px 0px 6px;
+
+          &:active {
+            transform: scale(0.95);
+          }
+        }
+        .more {
+          display: none;
+        }
+      }
+    }
+  }
+}

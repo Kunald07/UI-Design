@@ -1,0 +1,200 @@
+// workflow section
+
+.faq {
+  width: 100%;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  margin-bottom: 2rem;
+
+  h2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.25rem;
+    font-family:
+      "Gilroy-Medium", "Outfit", "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+
+    span {
+      font-size: 3rem;
+    }
+  }
+
+  .bentogrid {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .bento {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(1, auto);
+      grid-template-areas:
+        "box1"
+        "box2";
+      gap: 0rem;
+
+      .box1 {
+        height: auto;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        h3 {
+          font-size: 2rem;
+          font-family:
+            "Gilroy-Regular", "Outfit", "Poppins", Arial, Helvetica, sans-serif;
+          font-weight: 600;
+          color: var(--color-text);
+        }
+
+        p {
+          font-size: 1.125rem;
+          color: var(--color-text-secondary);
+          text-align: center;
+        }
+      }
+
+      .box2 {
+        grid-area: box2;
+        height: auto;
+        border-radius: 0.5rem;
+        padding: 0.25rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0.75rem;
+
+        .faq-list {
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem;
+        }
+
+        .faq-item {
+          background: var(--color-card);
+          border-radius: 1rem;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+          overflow: hidden;
+        }
+
+        /* SUMMARY */
+        .faq-item summary {
+          list-style: none;
+          cursor: pointer;
+          padding: 1.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .faq-item summary::-webkit-details-marker {
+          display: none;
+        }
+
+        /* ARROW */
+        .arrow {
+          color: #fafafa;
+          transition: transform 0.3s ease;
+        }
+
+        .faq-content {
+          max-height: 0;
+          overflow: hidden;
+          opacity: 0;
+          transition:
+            max-height 0.4s ease,
+            opacity 0.3s ease;
+          padding: 0 1.5rem;
+        }
+
+        .faq-content p {
+          padding-bottom: 1.5rem;
+          line-height: 1.6;
+          color: var(--color-text-secondary);
+          font-size: 1.125rem;
+        }
+
+        details[open] .faq-content {
+          max-height: 300px;
+          opacity: 1;
+        }
+
+        details[open] .arrow {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .faq {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+
+    h2 {
+      padding: 1rem 2.5rem;
+
+      span {
+        font-size: 3.75rem;
+      }
+    }
+
+    .bentogrid {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .bento {
+        padding: 1rem 0rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "box1 box2";
+
+        .box1 {
+          aspect-ratio: auto;
+          gap: 0;
+          align-items: flex-start;
+
+          h3 {
+            font-size: 2.5rem;
+            font-family:
+              "Gilroy-Regular", "Outfit", "Poppins", Arial, Helvetica,
+              sans-serif;
+            font-weight: 600;
+            color: var(--color-text);
+            margin-bottom: 0.75rem;
+          }
+
+          p {
+            font-size: 1.25rem;
+            color: var(--color-text-secondary);
+            text-align: left;
+          }
+        }
+
+        .box2 {
+          aspect-ratio: auto;
+          gap: 0;
+
+          .faq-content {
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+  }
+}

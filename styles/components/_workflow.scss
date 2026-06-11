@@ -1,0 +1,400 @@
+// workflow section
+
+.workflow {
+  width: 100%;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  margin-bottom: 2rem;
+
+  h2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.25rem;
+    font-family:
+      "Gilroy-Medium", "Outfit", "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+
+    span {
+      font-size: 3rem;
+    }
+  }
+
+  .bentogrid {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 1rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .bento {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas:
+        "box1"
+        "box2"
+        "box3"
+        "box4";
+      gap: 0.5rem;
+
+      .box1 {
+        background-color: var(--color-card);
+        min-height: 22rem;
+        height: auto;
+        border-radius: 0.5rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+
+        .top {
+          background: url("../assets//images/1c.png");
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 100%;
+          width: 100%;
+          border-radius: 1rem;
+
+          span {
+            font-size: 2rem;
+            color: var(--color-text-secondary);
+          }
+        }
+
+        .bottom {
+          h3 {
+            font-size: 2rem;
+            font-family:
+              "Gilroy-Regular", "Outfit", "Poppins", Arial, Helvetica,
+              sans-serif;
+            font-weight: 600;
+            color: var(--color-text);
+            margin-bottom: 0.75rem;
+          }
+
+          p {
+            font-size: 1.125rem;
+            color: var(--color-text-secondary);
+          }
+        }
+      }
+
+      .box2 {
+        grid-area: box2;
+        background-color: var(--color-card);
+        min-height: 22rem;
+        height: auto;
+        border-radius: 0.5rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+
+        .top {
+          background: url("../assets//images/2c.jpg");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          height: 100%;
+          width: 100%;
+          border-radius: 1rem;
+
+          span {
+            font-size: 2rem;
+            color: var(--color-text-secondary);
+          }
+        }
+
+        .bottom {
+          h3 {
+            font-size: 2rem;
+            font-family:
+              "Gilroy-Regular", "Outfit", "Poppins", Arial, Helvetica,
+              sans-serif;
+            font-weight: 600;
+            color: var(--color-text);
+            margin-bottom: 0.75rem;
+          }
+
+          p {
+            font-size: 1.125rem;
+            color: var(--color-text-secondary);
+          }
+        }
+      }
+
+      .box3 {
+        grid-area: box3;
+        background-color: var(--color-card);
+        min-height: 22rem;
+        height: auto;
+        border-radius: 0.5rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+
+        .top {
+          background: url("../assets//images/3c.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          height: 100%;
+          width: 100%;
+          border-radius: 0.5rem;
+
+          span {
+            font-size: 2rem;
+            color: var(--color-text-secondary);
+          }
+        }
+
+        .bottom {
+          h3 {
+            font-size: 2rem;
+            font-family:
+              "Gilroy-Regular", "Outfit", "Poppins", Arial, Helvetica,
+              sans-serif;
+            font-weight: 600;
+            color: var(--color-text);
+            margin-bottom: 0.75rem;
+          }
+
+          p {
+            font-size: 1.125rem;
+            color: var(--color-text-secondary);
+          }
+        }
+      }
+
+      .box4 {
+        grid-area: box4;
+        background-color: var(--color-card);
+        min-height: 22rem;
+        height: auto;
+        border-radius: 0.5rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+
+        .top {
+          background: url("../assets//images/4c.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          height: 100%;
+          width: 100%;
+          border-radius: 0.5rem;
+
+          span {
+            font-size: 2rem;
+            color: var(--color-text-secondary);
+          }
+        }
+
+        .bottom {
+          h3 {
+            font-size: 2rem;
+            font-family:
+              "Gilroy-Regular", "Outfit", "Poppins", Arial, Helvetica,
+              sans-serif;
+            font-weight: 600;
+            color: var(--color-text);
+            margin-bottom: 0.75rem;
+          }
+
+          p {
+            font-size: 1.125rem;
+            color: var(--color-text-secondary);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .workflow {
+    margin-bottom: 0;
+
+    .bentogrid {
+      .bento {
+        .box1,
+        .box2,
+        .box3,
+        .box4 {
+          .top {
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .workflow {
+    min-height: 100vh;
+
+    h2 {
+      padding: 1rem 2.5rem;
+
+      span {
+        font-size: 3.75rem;
+      }
+    }
+
+    .bentogrid {
+      .bento {
+        min-height: 100vh;
+        padding: 1rem 0rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+          "box1 box2"
+          "box3 box4";
+
+        .box1 {
+          aspect-ratio: auto;
+          gap: 1rem;
+
+          .top {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            span {
+              font-size: 2rem;
+              color: var(--color-text-secondary);
+            }
+          }
+
+          .bottom {
+            h3 {
+              font-size: 2.25rem;
+              font-family:
+                "Gilroy-Regular", "Outfit", "Poppins", Arial, Helvetica,
+                sans-serif;
+              font-weight: 600;
+              color: var(--color-text);
+            }
+
+            p {
+              font-size: 1.25rem;
+              color: var(--color-text-secondary);
+            }
+          }
+        }
+
+        .box2 {
+          aspect-ratio: auto;
+          gap: 1rem;
+
+          .top {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            span {
+              font-size: 2rem;
+              color: var(--color-text-secondary);
+            }
+          }
+
+          .bottom {
+            h3 {
+              font-size: 2.25rem;
+              font-family:
+                "Gilroy-Regular", "Outfit", "Poppins", Arial, Helvetica,
+                sans-serif;
+              font-weight: 600;
+              color: var(--color-text);
+            }
+
+            p {
+              font-size: 1.25rem;
+              color: var(--color-text-secondary);
+            }
+          }
+        }
+
+        .box3 {
+          aspect-ratio: auto;
+          gap: 1rem;
+
+          .top {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            span {
+              font-size: 2rem;
+              color: var(--color-text-secondary);
+            }
+          }
+
+          .bottom {
+            h3 {
+              font-size: 2.25rem;
+              font-family:
+                "Gilroy-Regular", "Outfit", "Poppins", Arial, Helvetica,
+                sans-serif;
+              font-weight: 600;
+              color: var(--color-text);
+            }
+
+            p {
+              font-size: 1.25rem;
+              color: var(--color-text-secondary);
+            }
+          }
+        }
+
+        .box4 {
+          aspect-ratio: auto;
+          gap: 1rem;
+
+          .top {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            span {
+              font-size: 2rem;
+              color: var(--color-text-secondary);
+            }
+          }
+
+          .bottom {
+            h3 {
+              font-size: 2.25rem;
+              font-family:
+                "Gilroy-Regular", "Outfit", "Poppins", Arial, Helvetica,
+                sans-serif;
+              font-weight: 600;
+              color: var(--color-text);
+            }
+
+            p {
+              font-size: 1.25rem;
+              color: var(--color-text-secondary);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,293 @@
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 2.5rem;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .label {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-bg-secondary);
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    color: #fff;
+
+    .status-dot {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      .ping {
+        position: absolute;
+        inset: 0;
+        background-color: #00ff84;
+        border-radius: 50%;
+        animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+      }
+
+      .dot {
+        position: relative;
+        width: 0.625rem;
+        height: 0.625rem;
+        background-color: #00ff84;
+        border-radius: 50%;
+      }
+    }
+
+    .label-text {
+      margin-left: 0.5rem;
+    }
+  }
+
+  @keyframes ping {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    75%,
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+
+  h1 {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 500;
+    max-width: 64rem;
+    font-family:
+      "Gilroy-Regular", "Outfit", "Poppins", Arial, Helvetica, sans-serif;
+
+    span.icons {
+      display: inline-flex;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+
+      & > * {
+        margin-left: -0.25rem;
+      }
+
+      span {
+        height: 3rem;
+        width: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.625rem;
+        border: 3px solid #fafafa;
+
+        svg {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+
+      span:nth-child(1) {
+        background-color: #fbba54;
+        transform: rotate(5deg);
+      }
+
+      span:nth-child(2) {
+        background: linear-gradient(#ff7275, #f63f41);
+        transform: rotate(355deg);
+      }
+
+      span:nth-child(3) {
+        background: linear-gradient(#48daff, #0090ff);
+        transform: rotate(5deg);
+      }
+    }
+  }
+
+  p {
+    text-align: center;
+    max-width: 48rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+    letter-spacing: -0.3px;
+    line-height: 150%;
+    font-family:
+      "Gilroy-Regular", "Outfit", "Poppins", Arial, Helvetica, sans-serif;
+  }
+
+  button {
+    margin: 1.25rem 0 5rem 0;
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem;
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s ease-in;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    font-family: "Gilroy-Regular", "Outfit", Arial, Helvetica, sans-serif;
+    background-color: #fa3a3b;
+    color: white;
+    box-shadow:
+      rgba(255, 60, 60, 0.3) 0px 0px 72px 0px,
+      rgba(255, 255, 255, 0.6) 0px 1px 0px 0px inset,
+      rgba(255, 60, 60, 0.12) 0px 0px 0px 6px;
+
+    &:hover {
+      background-color: #ff3d3d;
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+
+  .social {
+    .proof {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 50%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 4px solid var(--color-bg);
+        transition: transform 0.25s ease;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        cursor: pointer;
+        user-drag: none;
+        -webkit-user-drag: none;
+
+        &:hover {
+          transform: translateY(-10px);
+        }
+      }
+
+      img:nth-child(2) {
+        margin-left: -0.75rem;
+      }
+      img:nth-child(3) {
+        margin-left: -0.75rem;
+      }
+      img:nth-child(4) {
+        margin-left: -0.75rem;
+      }
+      img:nth-child(5) {
+        margin-left: -0.75rem;
+      }
+    }
+    .stars {
+      margin-top: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        height: 1rem;
+        width: 1rem;
+      }
+    }
+
+    p {
+      margin-top: 0.75rem;
+      font-size: 0.75rem;
+      font-family:
+        "Gilroy-Medium", "Gilroy-Regular", "Outfit", "Poppins", Arial,
+        Helvetica, sans-serif;
+      font-weight: bold;
+      background: linear-gradient(180deg, #fff6d8, #f0c97a);
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.15),
+        0 4px 12px rgba(0, 0, 0, 0.4),
+        0 0 18px rgba(250, 223, 168, 0.25);
+    }
+  }
+}
+
+// responsive
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+
+    h1 {
+      font-size: 4rem;
+
+      span.icons {
+        span {
+          height: 4rem;
+          width: 4rem;
+
+          svg {
+            height: 2.5rem;
+            width: 2.5rem;
+          }
+        }
+      }
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+
+    button {
+      max-width: 250px;
+    }
+
+    &:hover .spotlight-bg {
+      opacity: 1;
+    }
+  }
+
+  .spotlight-bg {
+    --size: 200px;
+
+    position: absolute;
+    inset: 0;
+    background-image: url("../assets/images/spotlight.webp");
+    background-size: cover;
+    background-position: center;
+    pointer-events: none;
+
+    opacity: 0.001;
+    transition: opacity 0.25s ease;
+
+    -webkit-mask-image: radial-gradient(
+      circle var(--size) at var(--x, 50%) var(--y, 50%),
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.9) 40%,
+      rgba(0, 0, 0, 0) 75%
+    );
+
+    mask-image: radial-gradient(
+      circle var(--size) at var(--x, 50%) var(--y, 50%),
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.9) 40%,
+      rgba(0, 0, 0, 0) 75%
+    );
+  }
+
+  /* keep text above spotlight */
+  .hero > *:not(.spotlight-bg) {
+    position: relative;
+    z-index: 2;
+  }
+}
